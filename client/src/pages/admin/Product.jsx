@@ -19,7 +19,7 @@ const [data,setData] = useState([])
     const fetchData = async()=>{
         await handlefetch();
     }
-    handlefetch();
+   fetchData();
   },[])
   return (
     <div>

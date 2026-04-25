@@ -20,6 +20,7 @@ const ProductDetails = () => {
       const fetchData = async()=>{
         await handlefetch();
       }
+      fetchData()
     },[])
     // console.log(form);
     const handleCart = async()=>{
