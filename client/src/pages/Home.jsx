@@ -54,64 +54,64 @@ const Home = () => {
     }
   ];
 
-  // const categories = [
-  //   { id: 1, name: 'Arduino Boards', icon: '🔧', color: '#00d4ff' },
-  //   { id: 2, name: 'Raspberry Pi', icon: '🍓', color: '#ff6b6b' },
-  //   { id: 3, name: 'Sensors', icon: '📡', color: '#4ecdc4' },
-  //   { id: 4, name: 'Development Kits', icon: '📦', color: '#95e1d3' },
-  //   { id: 5, name: 'Displays', icon: '📺', color: '#ffd89b' },
-  // ];
+  const categories = [
+    { id: 1, name: 'Arduino Boards', icon: '🔧', color: '#00d4ff' },
+    { id: 2, name: 'Raspberry Pi', icon: '🍓', color: '#ff6b6b' },
+    { id: 3, name: 'Sensors', icon: '📡', color: '#4ecdc4' },
+    { id: 4, name: 'Development Kits', icon: '📦', color: '#95e1d3' },
+    { id: 5, name: 'Displays', icon: '📺', color: '#ffd89b' },
+  ];
 
-  // const featuredProducts = [
-  //   {
-  //     id: 1,
-  //     name: 'Arduino Uno R3',
-  //     price: '$24.99',
-  //     image: 'https://via.placeholder.com/250x250/1a1f3a/00d4ff?text=Arduino+Uno',
-  //     rating: 4.8,
-  //     reviews: 245
-  //   },
-  //   {
-  //     id: 2,
-  //     name: 'Raspberry Pi 4B',
-  //     price: '$75.99',
-  //     image: 'https://via.placeholder.com/250x250/0f2847/ff6b6b?text=Raspberry+Pi',
-  //     rating: 4.9,
-  //     reviews: 312
-  //   },
-  //   {
-  //     id: 3,
-  //     name: 'DHT22 Sensor',
-  //     price: '$9.99',
-  //     image: 'https://via.placeholder.com/250x250/162d5b/4ecdc4?text=DHT22',
-  //     rating: 4.7,
-  //     reviews: 178
-  //   },
-  //   {
-  //     id: 4,
-  //     name: 'OLED Display 128x64',
-  //     price: '$19.99',
-  //     image: 'https://via.placeholder.com/250x250/1a2d4a/ffd89b?text=OLED',
-  //     rating: 4.6,
-  //     reviews: 156
-  //   },
-  //   {
-  //     id: 5,
-  //     name: 'Jumper Wire Set',
-  //     price: '$5.99',
-  //     image: 'https://via.placeholder.com/250x250/0d1b2a/95e1d3?text=Jumpers',
-  //     rating: 4.5,
-  //     reviews: 289
-  //   },
-  //   {
-  //     id: 6,
-  //     name: 'Servo Motor SG90',
-  //     price: '$3.49',
-  //     image: 'https://via.placeholder.com/250x250/1a1f3a/ffd3a5?text=Servo',
-  //     rating: 4.7,
-  //     reviews: 201
-  //   }
-  // ];
+  const featuredProducts = [
+    {
+      id: 1,
+      name: 'Arduino Uno R3',
+      price: '$24.99',
+      image: 'https://via.placeholder.com/250x250/1a1f3a/00d4ff?text=Arduino+Uno',
+      rating: 4.8,
+      reviews: 245
+    },
+    {
+      id: 2,
+      name: 'Raspberry Pi 4B',
+      price: '$75.99',
+      image: 'https://via.placeholder.com/250x250/0f2847/ff6b6b?text=Raspberry+Pi',
+      rating: 4.9,
+      reviews: 312
+    },
+    {
+      id: 3,
+      name: 'DHT22 Sensor',
+      price: '$9.99',
+      image: 'https://via.placeholder.com/250x250/162d5b/4ecdc4?text=DHT22',
+      rating: 4.7,
+      reviews: 178
+    },
+    {
+      id: 4,
+      name: 'OLED Display 128x64',
+      price: '$19.99',
+      image: 'https://via.placeholder.com/250x250/1a2d4a/ffd89b?text=OLED',
+      rating: 4.6,
+      reviews: 156
+    },
+    {
+      id: 5,
+      name: 'Jumper Wire Set',
+      price: '$5.99',
+      image: 'https://via.placeholder.com/250x250/0d1b2a/95e1d3?text=Jumpers',
+      rating: 4.5,
+      reviews: 289
+    },
+    {
+      id: 6,
+      name: 'Servo Motor SG90',
+      price: '$3.49',
+      image: 'https://via.placeholder.com/250x250/1a1f3a/ffd3a5?text=Servo',
+      rating: 4.7,
+      reviews: 201
+    }
+  ];
 
   const testimonials = [
     {
