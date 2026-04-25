@@ -6,14 +6,18 @@ import slider2 from "../assets/images/raspberry.jpg"
 import slider3 from "../assets/images/component.jpg"
 import axios from 'axios'
 const Home = () => {
-    const [categories , setCategories] = useState([]);
-    const [featuredProducts,setfeaturedProducts] = useState([]);
+    // const [categories , setCategories] = useState([]);
+    // const [featuredProducts,setfeaturedProducts] = useState([]);
     const handleFetch = async()=>{
         try{
         const res = await axios.get('http://localhost:5000/api/category/home')
-            setCategories(res.data.data);
+            // setCategories(res.data.data);
+            console.log(res);
+            
         const res2 = await axios.get('http://localhost:5000/api/product/featured');
-          setfeaturedProducts(res2.data.data)
+          // setfeaturedProducts(res2.data.data)
+          console.log(res2);
+          
         } 
         catch(er){
           console.log(er);
