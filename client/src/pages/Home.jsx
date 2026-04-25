@@ -20,9 +20,13 @@ const Home = () => {
         }     
     }
 
-    useEffect(()=>{
-      handleFetch();
-    },[])
+    useEffect(() => {
+  const fetchData = async () => {
+    await handleFetch();
+  };
+
+  fetchData();
+}, []);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -138,7 +142,7 @@ const Home = () => {
       setCurrentSlide((prev) => (prev + 1) % sliderData.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [sliderData.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % sliderData.length);
@@ -149,7 +153,10 @@ const Home = () => {
   };
 
   const id = localStorage.getItem('id')
+  
   const role = localStorage.getItem('role')
+  console.log(id,role);
+  
   return (
     <div className="home-container">
       {/* Header */}

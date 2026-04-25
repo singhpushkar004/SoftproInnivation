@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+
 const AddProduct = () => {
 
   const [category , setCategory] = useState([]); 
@@ -63,7 +63,10 @@ const AddProduct = () => {
         setCategory(res.data.data);
   }
   useEffect(()=>{
-    handleCategory()
+    const fetchCate = async()=>{
+      await handleCategory()
+    }
+    fetchCate();
   },[])
   console.log(formData);
   

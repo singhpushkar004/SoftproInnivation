@@ -14,7 +14,10 @@ const Category = () => {
     } 
   }
   useEffect(()=>{
-    handlefetch();
+    const fetchData = async()=>{
+      await handlefetch();
+    }
+    fetchData();
   },[])
 
   const handleDelete = async(id)=>{

@@ -12,10 +12,10 @@ const Register = () => {
     const handleChange = (e)=>{
         setFormData(()=>({...formData,[e.target.name]:e.target.value}))
     }
-    const handleSubmit = (e)=>{
+    const handleSubmit = async(e)=>{
         e.preventDefault();
         try{
-            const res = axios.post('http://localhost:5000/api/user/register',formData);
+            await axios.post('http://localhost:5000/api/user/register',formData);
             alert("User Registered Successfully")
             navigate('/login')
         }

@@ -29,6 +29,8 @@ const AddCategory = () => {
                     'Content-Type':'multipart/form-data'
                 }
             });
+            console.log(res);
+            
             alert("Category Added Successfully");
              navigate('/admin/dashboard/category')
            }

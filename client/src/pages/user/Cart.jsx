@@ -11,13 +11,16 @@ const Cart = () => {
     setData(res.data.data);
   }
   useEffect(()=>{
-    handleFetch();
+    const fetchData = async()=>{
+      await handleFetch();
+    }
+    fetchData();
   },[])
   console.log(data);
   
   return (
     <div>
-      {data.map((item,i)=>(
+      {data.map((item)=>(
         <div className="card">
           <div className="card-body">
             <div className="h2">Name : {item.productId.name}</div>

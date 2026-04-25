@@ -6,7 +6,7 @@ const ProductDetails = () => {
     // console.log(id);
     const userId = localStorage.getItem("id");
     const [data,setData] = useState([]);
-    const [form,setForm] = useState({
+    const [form,_setForm] = useState({
       userId:userId,
       productId:id
     });
@@ -17,7 +17,9 @@ const ProductDetails = () => {
       
     }
     useEffect(()=>{
-      handlefetch();
+      const fetchData = async()=>{
+        await handlefetch();
+      }
     },[])
     // console.log(form);
     const handleCart = async()=>{
