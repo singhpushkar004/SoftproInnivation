@@ -163,7 +163,7 @@ const Home = () => {
   
   return (
     <div className="home-container">
-      {/* Header */
+      {/* Header */}
       <header className="navbar navbar-expand-lg navbar-dark header-custom">
         <div className="container-fluid">
           <Link className="navbar-brand brand-logo" to="/">
