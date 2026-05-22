@@ -168,7 +168,7 @@ const Home = () => {
         <div className="container-fluid">
           <Link className="navbar-brand brand-logo" to="/">
             <span className="brand-icon">⚙️</span>
-            <span className="brand-text">SoftproInnovation</span>
+            <span className="brand-text">Pushkar Singh</span>
           </Link>
           <button
             className="navbar-toggler"
